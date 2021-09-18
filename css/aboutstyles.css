@@ -1,4 +1,9 @@
-
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
 .mainh1 {
   text-align: center;
 }
@@ -9,10 +14,17 @@
 }
 .image img {
     float: left;
-    width: 400px;
-    height: 260px;
+    width: 475px;
+    height: 300px;
     padding: 0 10px 0 0;
     padding-right: 30px;
+    transition: 0.4s ease;
+}
+.image img:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.4s ease;
 }
 
 .container2{
@@ -26,6 +38,13 @@
   height: 60px;
   padding: 0 10px 0 0;
   padding-right: 30px;
+  transition: 0.4s ease;
+}
+.image2 img:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.4s ease;
 }
 
 }
@@ -50,9 +69,7 @@ nav {
   font-family:  Century Gothic;
 }
 
-h1 {
-  font-family:  Century Gothic;
-}
+
 
 
 .footer-basic {

@@ -1,4 +1,9 @@
-
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
 .portfolio {
   display: grid;
   grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
@@ -8,7 +13,14 @@
 
 .image img {
   width: 100%;
+  opacity:1;
+  transition: 0.2s ease;
 }
+.image img:hover{
+  opacity:0.5;
+  transition: 0.2s ease;
+}
+
 .bg-dark {
   background-color: #7DD3D8 !important;
 }
@@ -21,16 +33,8 @@
   color: #fff;
 }
 
-nav {
-  font-family: Century Gothic;
-}
-
-.authors {
-  font-family:  Century Gothic;
-}
-
 h1 {
-  font-family:  Century Gothic;
+
   text-align: center;
 }
 
@@ -74,16 +78,17 @@ h1 {
   font-size: 10px;
   color: gray;
 }
-/* ######################################################## div for index.html ########################## */
+
 .middle {
-background-color: #F2FCEC;
+  background-color: #F5F5F5;
 }
 
 .pipoca{
-width:500px;
+width: 950px;
 word-wrap: break-word;
 margin: auto;
-font-family: Century Gothic;
+color: #585858;
+
 }
 .center {
   display: block;
@@ -92,20 +97,11 @@ font-family: Century Gothic;
   width: 50%;
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Mobile Styles */
 @media only screen and (max-width: 550px) {
  .portfolio{
    grid-template-columns: 1fr;
 
  }
-/* ######################################### ABOUT ME PAGE ############################################## */
-
 
 .section {
   width: 100%;
